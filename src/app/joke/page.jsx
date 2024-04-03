@@ -29,7 +29,7 @@ const page = () => {
 
 
                 {/* Joke Box */}
-                <div className='joke_box'>
+                <div className='w-[65vmin] p-10 text-center rounded-md bg-[#10234b]'>
 
                     <span className='text-5xl '> &#128514;  </span>
 

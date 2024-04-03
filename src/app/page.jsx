@@ -8,7 +8,7 @@ const Home = () => {
 
         <h1 className='home_heading'> API's Explorer  Hub </h1>
 
-        <div className='flex justify-center gap-6 mt-14'>
+        <div className='flex flex-wrap justify-center gap-6 mt-14'>
 
           <Link href="/joke" className='project_link' > Random Jokes </Link>
           <Link href="/dictionary" className='project_link' > Dictionary </Link>
