@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.layout {
+    @apply min-h-screen flex flex-col justify-center items-center bg-gray-200;
+}
+
+
+/* Heading Styles */
+.home_heading {
+    @apply text-center text-6xl font-semibold;
+}
+
+.main_heading {
+    @apply mb-6 text-center text-5xl font-semibold;
+}
+
+
+/* Links Styled */
+.project_link {
+    @apply mt-8 text-lg border-b border-black;
+}
+
+.api_link {
+    @apply mb-8 text-purple-700;
+}
+
+.back {
+    @apply mt-8 border-b border-black;
+}
+
+
+
+/* Button STyle */
+.btn {
+    @apply py-2.5 px-5 me-2 text-base font-medium text-[#222438] focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100;
+}
