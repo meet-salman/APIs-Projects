@@ -29,7 +29,7 @@ const page = () => {
             ]
         }
     ]);
-    const [audio, setAudio] = useState(new Audio(result[0].phonetics[0].audio));
+    // const [audio, setAudio] = useState(new Audio(result[0].phonetics[0].audio));
 
 
     // Search Word 
@@ -48,7 +48,7 @@ const page = () => {
                     setIsError(false);
                     setResult(data);
                     console.log(data);
-                    setAudio(new Audio(data[0].phonetics[0].audio))
+                    // setAudio(new Audio(data[0].phonetics[0].audio))
                 } else {
                     setIsError(true)
                 }
@@ -56,10 +56,10 @@ const page = () => {
             .catch(err => setIsError(true))
     }
 
-    // Sound Play
-    const playSound = () => {
-        audio.play()
-    }
+    // // Sound Play
+    // const playSound = () => {
+    //     audio.play()
+    // }
 
 
     return (
@@ -92,7 +92,7 @@ const page = () => {
                             <>
                                 <div className="word_box">
                                     <h3> {result[0].word} </h3>
-                                    <button onClick={playSound}> &#128362; </button>
+                                    {/* <button onClick={playSound}> &#128362; </button> */}
                                 </div>
 
                                 <div className="details">
